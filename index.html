@@ -24,24 +24,48 @@
         var n1 = document.getElementById("num1");
         var n2 = document.getElementById("num2");
         var res = document.getElementById("result");
-    
-        document.getElementById("add").addEventListener("click", function() {
-            res.value = 
+
+        document.getElementById("add").addEventListener("click", myFunction);
+        document.getElementById("sub").addEventListener("click", myFunction1);
+        document.getElementById("mul").addEventListener("click", myFunction2);
+        document.getElementById("div").addEventListener("click", myFunction3);
+
+     function myFunction() {
+        res.value = 
             parseInt(n1.value)+parseInt(n2.value)
-        });
-        
-        document.getElementById("sub").addEventListener("click", function() {
+        }
+        function myFunction1() {
             res.value = 
             parseInt(n1.value)-parseInt(n2.value)
-        });
-        document.getElementById("mul").addEventListener("click", function() {
+        }
+        function myFunction2() {
             res.value = 
             parseInt(n1.value)*parseInt(n2.value)
-        });
-        document.getElementById("div").addEventListener("click", function() {
+        }
+        function myFunction3() {
             res.value = 
             parseInt(n1.value)/parseInt(n2.value)
-        });
+        }
+    
+   
+    
+        // document.getElementById("add").addEventListener("click", function() {
+        //     res.value = 
+        //     parseInt(n1.value)+parseInt(n2.value)
+        // });
+        
+        // document.getElementById("sub").addEventListener("click", function() {
+        //     res.value = 
+        //     parseInt(n1.value)-parseInt(n2.value)
+        // });
+        // document.getElementById("mul").addEventListener("click", function() {
+        //     res.value = 
+        //     parseInt(n1.value)*parseInt(n2.value)
+        // });
+        // document.getElementById("div").addEventListener("click", function() {
+        //     res.value = 
+        //     parseInt(n1.value)/parseInt(n2.value)
+        // });
         
         </script>
 
